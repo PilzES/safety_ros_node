@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="ros_pss4000" name="modbus_client" type="modbus_client.py" output="screen"/>
+    <rosparam file = "$(find ros_pss4000)/config/SafetyEvent.yaml" />
+
+</launch>
